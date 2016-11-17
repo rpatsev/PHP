@@ -17,7 +17,7 @@
 		<![endif]-->
 	</head>
 	<body>
-		<h1 class="text-center">Hello World</h1>
+		<h1 class="text-center">My personal blog</h1>
 		<div class="container">
 
 		<nav class="navbar navbar-default" role="navigation">
@@ -39,48 +39,39 @@
 						<li class="active"><a href="/">Home</a></li>
 						<li><a href="/new.php"></a></li>
 					</ul>
-<!-- 					<form class="navbar-form navbar-left" role="search">
-	<div class="form-group">
-		<input type="text" class="form-control" placeholder="Search">
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="/login.php">Login</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Contacts</a></li>
+									<li><a href="#">Credits</a></li>
+									<li><a href="#">Support</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div>
+			</nav>
+
+			 <form action="" method="POST">
+			 	<input type="text" name="" id="input" class="form-control" value="" name="title" required="required" title="">
+			 	<input type="text" name="" id="input" class="form-control" value="" name="content" required="required" title="">
+			<!--  	<input type="text" name="title" id="">
+			<input type="text" name="content" id=""> -->
+			 	<button type="submit" class="btn btn-primary">Send message</button>
+			</form>
+
+<!-- 			<div class="panel panel-info">
+	<div class="panel-heading">
+		<h3 class="panel-title">Panel title</h3>
 	</div>
-	<button type="submit" class="btn btn-default">Submit</button>
-</form> -->
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/login.php">Login</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">More<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">About us</a></li>
-								<li><a href="#">Contacts</a></li>
-								<li><a href="#">Credits</a></li>
-								<li><a href="#">Support</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div>
-		</nav>
-
-
-<a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a>
-<div class="modal fade" id="modal-id">
-	<div class="modal-dialog">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">Modal title</h4>
-			</div>
-			<div class="modal-body">
-				
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
-			</div>
-		</div>
+	<div class="panel-body">
+		Panel content
 	</div>
-</div>
-
+</div> -->
 
 			<ul class="pagination">
 				<li><a href="#">&laquo;</a></li>

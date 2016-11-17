@@ -1,7 +1,6 @@
-<!-- <pre>
 
 <?php 
-
+require 'header.php';
 
 $data = unserialize(file_get_contents('database'));
 $posts = array();
@@ -14,8 +13,8 @@ var_export($posts);
 
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-	$content = $_POST['content'];
-	$title = $_POST['title'];
+	$content = isset($_POST['content']) ? $content = $_POST['content'] : null;
+	$title = isset($_POST['title']) ? $title = $_POST['title'] : null;
 	$posts[] = array('title' => $title, 'content' => $content);
 	
 	$result = serialize($posts);
@@ -25,12 +24,3 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 	 ?>
 
- <form action="" method="POST">
- 	<input type="text" name="title" id="">
- 	<input type="text" name="content" id="">
- 	<input type="submit" value="Send message">
- </form>
-</pre> -->
-
-
-<?php require 'header.php'; ?>
