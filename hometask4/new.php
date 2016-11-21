@@ -9,7 +9,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 	
 	$result = serialize($posts);
 	file_put_contents('database', $result);
-	header('Location:'.$hlocation);
+	header('Location: ../hometask4/index.php');
 }
 
 

@@ -38,7 +38,6 @@
 					<ul class="nav navbar-nav">
 						<li class="active"><a href='../hometask4/index.php'>Home</a></li>
 						<li><a href="../hometask4/new.php">Add post</a></li>
-						<li></li>
 					</ul>
 
 						<ul class="nav navbar-nav navbar-right">
