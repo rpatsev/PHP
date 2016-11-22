@@ -1,7 +1,23 @@
 <?php 
 
-$action = "Create";
 require 'init.php';
+
+if(isset($_GET['id'])){
+	$id = $_GET['id'];
+} else {
+	header('Location: ../hometask4/index.php');
+	exit();
+}
+
+$action = "Update";
+
+
+$titleval = $posts[$id]['title'];
+$contentval = $posts[$id]['content'];
+
+
+
+
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
 	$content = isset($_POST['content']) ? $content = $_POST['content'] : null;
@@ -13,13 +29,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 	header('Location: ../hometask4/index.php');
 }
 
-$contentval = $titleval = null;
 
 require 'header.php';
 require 'new_post_form.php';
 require 'footer.php';
-
-
 
 
 

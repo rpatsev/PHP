@@ -6,7 +6,7 @@
 	<div class="panel-body">
 		<?php echo htmlentities($post['content']); ?>
 	</div>
-	<a class = "btn btn-success" href="#" disabled = 'disabled'><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Update</a>
+	<a class = "btn btn-success" href="../hometask4/update_post.php?id=<?php echo $id;?>"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Update</a>
 	<!-- <a class = "btn btn-danger" href="../hometask4/remove_post.php?id=<?php echo $id;?>"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Delete</a> -->
 
 	<a class="btn btn-danger" data-toggle="modal" href='#modal-id'><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Delete</a>
@@ -19,7 +19,8 @@
 				</div>
 				<div class="modal-body">
 					<?php 
-						echo 'Are you sure? Removing this blog is not reversable option!';
+						echo 'Are you sure? Removing this blog is not reversable option!'."<hr>";
+						echo $posts[$id]['content']; 
 					 ?>
 				</div>
 				<div class="modal-footer">
