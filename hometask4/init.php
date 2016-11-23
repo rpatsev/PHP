@@ -7,8 +7,4 @@ $posts = array();
 if ($data) {
 	$posts = $data;
 }
-
-
  ?>
-
-
